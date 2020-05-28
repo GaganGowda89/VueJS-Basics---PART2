@@ -1,28 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+   <h1> Lets Start VueApp... !!!</h1>
+   <!-- <app-message></app-message> -->
+   <!-- Load the routes from main.js and render where your navigating so we use router-view -->
+   <hr>
+
+   <!-- <a href = "/"> Home </a> -->
+   <router-link to = "/">Home  </router-link>
+   <router-link to = "/users/5">      Users - Five </router-link>
+   <router-link to = "/users/10">      Users - X </router-link>
+   <router-link to = "/message">      Message</router-link>
+
+   <hr>
+   <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+   
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
